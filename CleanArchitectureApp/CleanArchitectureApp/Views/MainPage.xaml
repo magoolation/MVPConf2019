@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CleanArchitectureApp.Views.MainPage"
+             Title="{Binding Title}">
+
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand">
+        <Entry Placeholder="Enter a message" Text="{Binding Text,Mode=TwoWay}" />
+        <Button Text="Send" Command="{Binding SendCommand}" />
+        <Label Text="{Binding Message}" />
+    </StackLayout>
+
+</ContentPage>
